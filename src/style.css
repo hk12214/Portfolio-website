@@ -21,12 +21,63 @@ section {
   padding: 40px;
 }
 
-.project {
-  border: 1px solid #f0c1f0e5;
-  padding: 20px;
-  margin: 20px 0;
+.projects-section {
+  padding: 50px 20px;
+  background: #f9f9f9;
+  text-align: center;
 }
 
+.projects-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #6e3565;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  background-color: #555;
+}
 footer {
   text-align: center;
   background: #4d164d;
