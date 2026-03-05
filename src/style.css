@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+header {
+  background: #4d164d;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+span {
+  background: #6e3565;
+  padding: 10px;
+}
+span a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+section {
+  padding: 40px;
+}
+
+.project {
+  border: 1px solid #f0c1f0e5;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+footer {
+  text-align: center;
+  background: #4d164d;
+  color: white;
+  padding: 10px;
+}
