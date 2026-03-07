@@ -76,21 +76,19 @@ nav a:hover {
   margin-top: 20px;
 }
 
-.btn {
-  background: #7b3fe4;
-  color: white;
-  padding: 10px 18px;
-  text-decoration: none;
-  border-radius: 6px;
-  margin-right: 10px;
-}
-
-.btn-outline {
-  border: 1px solid #7b3fe4;
-  padding: 10px 18px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #7b3fe4;
+.buttons a{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  width:40px;
+  height:40px;
+  border:2px solid #7b3fe4;
+  border-radius:50%;
+  font-size:20px;
+  color:#7b3fe4;
+  margin-right:10px;
+  text-decoration:none;
+  transition:0.3s;
 }
 
 .home-image img {
@@ -197,3 +195,5 @@ body.dark footer {
     align-items: center;
   }
 }
+#contact{
+   text-decoration:none;}
