@@ -57,13 +57,14 @@ nav a:hover {
 .home {
   position: relative;
   height: 100vh;
-  background: #0f172a;
+  background: #070331;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   text-align: center;
   overflow: hidden;
+
 }
 
 .home::before {
@@ -71,7 +72,7 @@ nav a:hover {
   position: absolute;
   width: 400px;
   height: 400px;
-  background: #3b82f6;
+  background: #4a85e6;
   border-radius: 50%;
   top: -100px;
   left: -100px;
@@ -83,7 +84,7 @@ nav a:hover {
   position: absolute;
   width: 350px;
   height: 350px;
-  background: #9333ea;
+  background: #9445df;
   border-radius: 50%;
   bottom: -120px;
   right: -120px;
@@ -144,7 +145,11 @@ span {
   border: 6px solid #eee;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
+#about p{
+  margin:15px;
+  line-height: 2;
 
+}
 section {
   padding: 80px 10%;
   border: 1px solid rgb(0, 0, 0, 0.2);
@@ -154,7 +159,10 @@ section {
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
+section h2{
+  color:#7338e0;
 
+}
 h2 {
   margin-bottom: 30px;
   font-size: 28px;
@@ -233,7 +241,49 @@ h2 {
 .project-link:hover {
   background: #5f2fc1;
 }
+.contact-container{
+display:flex;
+justify-content:center;
+}
 
+.contact-form{
+width:100%;
+max-width:500px;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:15px;
+outline:none;
+transition:0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+border-color:#7b3fe4;
+box-shadow:0 0 5px rgba(123,63,228,0.4);
+}
+
+.contact-form button{
+background:#7b3fe4;
+color:white;
+border:none;
+padding:12px;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-form button:hover{
+background:#5e2fc2;
+}
 footer {
   text-align: center;
   padding: 20px;
@@ -291,10 +341,6 @@ body.dark .home-text h2 {
   }
 }
 
-#contact a {
-  text-decoration: none;
-  color: #7b3fe4
-}
 
 @keyframes gradientMove {
   0% {
