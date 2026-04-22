@@ -109,12 +109,12 @@ nav a:hover {
 span {
   color: #222;
 }
-body.dark .home-text h1 span {
+body.dark .home-text span {
     color: #fff;
 }
 .home .buttons{
   display: flex;
-    gap: 25px;
+    gap: 20px;
 }
 .home .buttons i {
     font-size: 2rem;
@@ -263,7 +263,10 @@ body.dark .project-card p { color: #bbb; }
   background: #fafafa;
 }
 .contact-form button{
-  padding: 12px;}
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;  
+}
 
 body.dark .contact-form input, body.dark .contact-form textarea {
   background: #2d2d2d;
