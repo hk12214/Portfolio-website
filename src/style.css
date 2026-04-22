@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: #f8f9fd; /* Clean professional light background */
+  background: linear-gradient(135deg, #fffcf5 0%, #f7f3e9 100%);
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
@@ -49,6 +49,9 @@ body.dark header {
   color: #7b3fe4;
   text-decoration: none;
 }
+body.dark .logo {
+    color: #a77eff; 
+}
 
 nav a {
   margin-left: 20px;
@@ -72,24 +75,29 @@ nav a:hover {
 
 /* --- 3. HOME SECTION --- */
 .home {
-  height: 90vh;
+  min-height: 100vh;
+  position: relative;
   display: flex;
-  flex-direction: row; /* Forces horizontal layout */
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
-  background: #070331;
-  color: white;
+  padding: 50px 10%;
+  margin-top: 40px;
   overflow: hidden;
 }
 .home-text {
-  max-width: 600px;
+  max-width: 550px;
   z-index: 2;
+}
+.intro{
+  font-size: 1.1rem;
+    margin-bottom: 10px;
 }
 
 .home-text h1 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  line-height: 1.2;
+  font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: #6a49a1;
 }
 
 .home-text h2 {
@@ -99,9 +107,24 @@ nav a:hover {
 }
 
 span {
-  color: #a17ae4;
+  color: #222;
 }
-
+body.dark .home-text h1 span {
+    color: #fff;
+}
+.home .buttons{
+  display: flex;
+    gap: 25px;
+}
+.home .buttons i {
+    font-size: 2rem;
+    color: #303f9f;
+    transition: transform 0.3s ease;
+}
+.home .buttons i:hover {
+    transform: scale(1.1);
+    color: #6a49a1;
+}
 .home-image {
   z-index: 2;
 }
@@ -203,7 +226,9 @@ body.dark .project-card {
   border-radius: 12px;
   object-fit: cover;
 }
-
+.project-card:hover img {
+    transform: scale(1.05);
+}
 .project-card p {
     font-size: 0.95rem;
     margin: 10px 0;
@@ -237,6 +262,8 @@ body.dark .project-card p { color: #bbb; }
   border: 1px solid #ddd;
   background: #fafafa;
 }
+.contact-form button{
+  padding: 12px;}
 
 body.dark .contact-form input, body.dark .contact-form textarea {
   background: #2d2d2d;
@@ -255,12 +282,18 @@ body.dark .contact-form input, body.dark .contact-form textarea {
     font-size: 0.9rem;
   }
 
-  .home {
+ .home {
     flex-direction: column-reverse; /* Stacks image on top of text for mobile */
     justify-content: center;
     text-align: center;
     padding-top: 80px;
-  }
+    }
+    .home .buttons {
+        justify-content: center;
+    }
+    .h1 {
+        font-size: 2.5rem;
+    }
 
   .home-text {
     text-align: center;
